@@ -1,27 +1,38 @@
-import React from 'react';
-import { Text } from 'react-native';
-import { View } from 'react-native-web';
+import React, { useState } from "react";
+import { Button, Text, View } from "react-native";
+
 // import getFullName from './getName';
 
 const Cat = (props) => {
-    // const nome = "joão"
+
+    const [isHungry, setIsHungry] = useState(true);
+
   return (
 
-       <Text>Hello, I am {props.name}!</Text>
+      <View>
+        <Text>
+            I am {props.name}, and I am {isHungry ? "hungry" : "full"}!
+        </Text>
+        <Button
+            onPress={() => {
+            setIsHungry(false);
+            }}
+            disabled={!isHungry}
+            title={isHungry ? "Pour me some milk, please!" : "Thank you!"}
+        />
+    </View>
   
   );
 }
 
 const Cafe = () =>{
     return (
-        <View>
-            <Text>Welcome!</Text>
-            <Cat name="Jotaro"/>
-            <Cat name="Dio"/>
-            <Cat name="Joestar"/>
-            <Cat name="Giorno"/>
-            <Cat name="Joseph"/>
-        </View>
+        <>
+            <Cat name="Munkustrap" />
+            <Cat name="Spot" />
+    
+            
+        </>
     );
 }
 
