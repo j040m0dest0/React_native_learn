@@ -1,6 +1,7 @@
 import { registerRootComponent } from 'expo';
 
 
+import CatApp from './CatApp';
 import comp from './components';
 import cats from './cats';
 import App from './App';
@@ -10,8 +11,9 @@ import App from './App';
 // the environment is set up appropriately
 
 
+registerRootComponent(CatApp);
 // registerRootComponent(comp);
-registerRootComponent(cats);
+// registerRootComponent(cats);
 // registerRootComponent(App);
 
 
