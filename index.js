@@ -1,6 +1,7 @@
 import { registerRootComponent } from 'expo';
 
 
+import PizzaTranslator from './PizzaTranslator';
 import contar from './counter';
 import CatApp from './CatApp';
 import comp from './components';
@@ -13,10 +14,11 @@ import App from './App';
 // the environment is set up appropriately
 
 
+registerRootComponent(PizzaTranslator);
 // registerRootComponent(contar);
 // registerRootComponent(CatApp);
 // registerRootComponent(comp);
-registerRootComponent(cats);
+// registerRootComponent(cats);
 // registerRootComponent(App);
 
 
