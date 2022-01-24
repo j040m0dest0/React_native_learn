@@ -14,11 +14,11 @@ import App from './App';
 // the environment is set up appropriately
 
 
-registerRootComponent(PizzaTranslator);
+// registerRootComponent(PizzaTranslator);
 // registerRootComponent(contar);
 // registerRootComponent(CatApp);
 // registerRootComponent(comp);
 // registerRootComponent(cats);
-// registerRootComponent(App);
+registerRootComponent(App);
 
 
